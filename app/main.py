@@ -15,4 +15,4 @@ def check_message(message: str = Query(..., description="Message to classify")):
 
 @app.get("/")
 def root():
-    return {"message": "Bienvenue dans l'API de classification de spam. Utilisez /check avec un message pour classifier."}
+    return {"message": "Bienvenue dans l'API de vérification de spam. Utilisez /check avec un message pour classifier."}
