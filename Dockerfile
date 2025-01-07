@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5117
 
-CMD [ "fastapi", "run", "--host", "0.0.0.0", "--port", "5117" ]
+CMD [ "fastapi", "run", "main.py", "--host", "0.0.0.0", "--port", "5117" ]
