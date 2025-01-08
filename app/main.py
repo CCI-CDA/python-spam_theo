@@ -4,7 +4,7 @@ import pickle
 app = FastAPI()
 
 # Charger le modèle et le vectorizer
-with open('app/spam_model.pkl', 'rb') as model_file:
+with open('spam_model.pkl', 'rb') as model_file:
     vectorizer, model = pickle.load(model_file)
 
 @app.get("/check")
